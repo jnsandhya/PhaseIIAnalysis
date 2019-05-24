@@ -15,8 +15,8 @@ from python/Ntuplzr_cfi.py. These default parameters can be modified in :
 test/myproduceNtuples_cfg.py
 
 to run this file, do :  
-cmsRun test/myproduceNtuples_cfg.py maxEvents=10 outputFile=file.root
-
+```cmsRun test/myproduceNtuples_cfg.py maxEvents=10 outputFile=file.root
+```
 
 ###################################################################################
 STEP 1 : to get the main ntuples from this Ntuplzer using test/myproduceNtuples_cfg.py, a crab setup is there. one can update 
