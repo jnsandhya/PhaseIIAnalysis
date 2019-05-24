@@ -16,6 +16,7 @@ test/myproduceNtuples_cfg.py
 
 to run this file, do :  
 ```cmsRun test/myproduceNtuples_cfg.py maxEvents=10 outputFile=file.root
+
 ```
 
 ###################################################################################
@@ -29,6 +30,7 @@ python submitCrabJobs_cfgparams.py
 ###################################################################################
 To check on the status or resubmit the jobs, change the file Resubmit.csh accordingly and do :  
 ```source Resubmit.csh
+
 ```
 
 ###################################################################################
