@@ -2,12 +2,13 @@
 # Used for PhaseII Studies
 
 ####################################################################################
-cmsrel CMSSW_10_6_0
+```cmsrel CMSSW_10_6_0
 cd CMSSW_10_6_0/src/
 cmsenv
 git clone https://github.com/jnsandhya/PhaseIIAnalysis.git
 scramv1 b -j 8
-cd TreeMaker/Ntuplzr 
+cd TreeMaker/Ntuplzr
+```
 ####################################################################################
 Basic Setup : Here in plugins/Ntuplzr.cc is the EDAnalyzer that makes the ntuples, takes in information 
 from python/Ntuplzr_cfi.py. These default parameters can be modified in :
@@ -22,13 +23,13 @@ STEP 1 : to get the main ntuples from this Ntuplzer using test/myproduceNtuples_
         various parameters in test/Step1_crab/submitCrabJobs_cfgparams.py according to their choice. 
 	To crab-submit, do : 
 
-cd test/Step1_crab
+```cd test/Step1_crab
 python submitCrabJobs_cfgparams.py 
-
+```
 ###################################################################################
 To check on the status or resubmit the jobs, change the file Resubmit.csh accordingly and do :  
-source Resubmit.csh
-
+```source Resubmit.csh
+```
 
 ###################################################################################
 STEP 2 : Once the main ntuples are there, C++ classes along with a proof wrapper is written to be able to run the jobs 
@@ -46,10 +47,10 @@ Step1_runcreateList.sh creates the input list of files for a given sample throug
 And then Step2_runScript_runAll_eff.sh runs over the given class through the wrapper code of runAll.C.
 To Run : 
 
-cd test/Step2_PostAN
+```cd test/Step2_PostAN
 ./Step1_runcreateList.sh
 ./Step2_runScript_runAll_eff.sh
-
+```
 
 This gives the root files with all the information as askd from the class that was run. 
 
@@ -58,7 +59,7 @@ This gives the root files with all the information as askd from the class that w
 STEP 3: This is where one makes the final histograms and puts them on web page or wherever u want them to put using the proper plotter. 
 for the efficiency or fake rate plots, do : 
 
-cd test/Step3_MakePlots
+```cd test/Step3_MakePlots
 ./Step1_getEffPlots.sh
- 	   
+``` 	   
 ###################################################################################
