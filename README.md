@@ -1,5 +1,5 @@
 # PhaseIIAnalysis
-# Used for PhaseII Studies
+# Repository for collecting recipes for standard physics objects and for analysis of simulated events with the CMS phase 2 detector
 
 ####################################################################################
 ```
